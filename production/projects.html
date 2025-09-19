@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>All Projects — Michael McElroy</title>
+  <meta name="description" content="Browse all projects by Michael McElroy." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .projects-hero{ padding:3rem 0 1.2rem; }
+    .filters{ display:flex; gap:.6rem; flex-wrap:wrap; margin:.8rem 0 1rem; }
+    .chip{ display:inline-flex; align-items:center; gap:.35rem; padding:.22rem .6rem;
+      border:1px solid var(--line); border-radius:999px; font-size:.85rem; cursor:pointer; }
+    .chip[aria-pressed="true"]{ background:#182232; border-color:#263247; color:#cfe6ff; }
+    .empty{ color:var(--muted); margin:1rem 0; }
+    .backlink{ display:inline-flex; align-items:center; gap:.35rem; text-decoration:none; color:inherit; margin-bottom:1rem; }
+    .backlink:hover{ text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">MM</a>
+  </header>
+
+  <main>
+    <section class="projects-hero">
+      <div class="container">
+        <a class="backlink" href="index.html">← Back to Home</a>
+        <h1>All Projects</h1>
+        <p class="sub">Filter by tags; click any card to view details.</p>
+        <div class="filters" id="tagbar" aria-label="Filter by tags"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div id="grid" class="cards"></div>
+        <p id="empty" class="empty" style="display:none;">No projects match your filters.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Michael McElroy</p>
+      <p>
+        <a href="mailto:mmcelroy800@gmail.com">Email</a> ·
+        <a href="https://www.linkedin.com/in/mcelroymichael800" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="/assets/Michael_McElroy_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a> ·
+        <a href="https://github.com/mcelroymichael" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://mcelroymichael.com/">mcelroymichael.com</a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <script src="projects.js" defer></script>
+  <script src="all-projects.js" defer></script>
+</body>
+</html>

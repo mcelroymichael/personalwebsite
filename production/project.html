@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Project — Michael McElroy</title>
+  <meta name="description" content="Project details for Michael McElroy." />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Template-specific trims (kept tiny) */
+    .project-hero { padding: 3.2rem 0 1.2rem; }
+    .project-title { margin: 0; font-size: clamp(1.6rem, 3vw, 2.2rem); line-height: 1.15; }
+    .project-sub { color: var(--muted); margin: .35rem 0 .9rem; }
+    .chip { display:inline-block; padding:.18rem .55rem; border:1px solid var(--line); border-radius:999px; font-size:.82rem; margin-right:.35rem; }
+    .project-actions { display:flex; gap:.5rem; flex-wrap:wrap; margin:.7rem 0 0; }
+    .project-actions a { text-decoration:none; }
+    .project-heroimg { width:100%; aspect-ratio: 16/9; object-fit:cover; border-radius:12px; border:1px solid var(--line); background:#0f141b; margin-top:1rem; }
+    .project-body { padding: 2rem 0 2.8rem; }
+    .project-grid { display:grid; gap:1rem; }
+    @media (min-width: 900px){ .project-grid { grid-template-columns: 2fr 1fr; align-items:start; } }
+    .panel { background: var(--card); border:1px solid var(--line); border-radius:14px; padding:1rem; }
+    .panel h3 { margin: 0 0 .6rem; font-size: 1.05rem; }
+    .bullets { padding-left:1.1rem; margin:.2rem 0 0; }
+    .backlink { display:inline-flex; align-items:center; gap:.35rem; text-decoration:none; color:inherit; margin-bottom:1rem; }
+    .backlink:hover { text-decoration:underline; }
+    .gallery { display:grid; gap:.6rem; grid-template-columns: repeat(12, 1fr); margin-top:.8rem; }
+    .gallery img { grid-column: span 12; width:100%; border-radius:10px; border:1px solid var(--line); }
+    @media (min-width:760px){ .gallery img { grid-column: span 6; } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">MM</a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html#work">Work</a>
+      <a href="index.html#about">About</a>
+      <a class="btn" href="/assets/Michael_McElroy_Resume.pdf" target="_blank" rel="noopener">View Résumé (PDF)</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="container">
+        <a class="backlink" href="projects.html">← Back to All Projects</a>
+        <h1 class="project-title" id="p-title">Project Title</h1>
+        <p class="project-sub" id="p-sub">Subtitle / short line</p>
+        <div id="p-tags"></div>
+        <div class="project-actions" id="p-links"></div>
+        <img id="p-hero" class="project-heroimg" alt="" />
+      </div>
+    </section>
+
+    <section class="project-body">
+      <div class="container project-grid">
+        <article class="panel">
+          <h3>Summary</h3>
+          <p id="p-summary">—</p>
+
+          <h3 style="margin-top:1rem;">Details</h3>
+          <ul class="bullets" id="p-details"></ul>
+
+          <div id="p-gallerywrap" style="margin-top:1rem; display:none;">
+            <h3>Gallery</h3>
+            <div class="gallery" id="p-gallery"></div>
+          </div>
+        </article>
+
+        <aside class="panel">
+          <h3>Tech</h3>
+          <ul class="bullets" id="p-tech"></ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Michael McElroy</p>
+      <p>
+        <a href="mailto:mmcelroy800@gmail.com">Email</a> ·
+        <a href="https://www.linkedin.com/in/mcelroymichael800" target="_blank" rel="noopener">LinkedIn</a> ·
+        <a href="/assets/Michael_McElroy_Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a> ·
+        <a href="https://github.com/mcelroymichael" target="_blank" rel="noopener">GitHub</a> ·
+        <a href="https://mcelroymichael.com/">mcelroymichael.com</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <script src="script.js" defer></script>
+  <script src="projects.js" defer></script>
+  <script src="project-page.js" defer></script>
+</body>
+</html>
