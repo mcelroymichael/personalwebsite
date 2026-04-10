@@ -49,7 +49,7 @@ window.PROJECTS = {
   "power-supply": {
     title: "Custom Split ±35V Power Supply",
     subtitle: "Custom power supply that will later be used to power an audio amp.",
-    hero: "/assets/projects/chess/hero.png", // optional image path: "/assets/projects/fpga-eq/hero.jpg"
+    //hero: "/assets/projects/chess/hero.png", // optional image path: "/assets/projects/fpga-eq/hero.jpg"
     tags: ["Java", "JavaFX"],
     links: [
       //{ label: "GitHub", href: "#", kind: "code" },
@@ -57,8 +57,11 @@ window.PROJECTS = {
     ],
     summary: "Custom Split ±35V Power Supply designed to power an 80W Audio Amplifier.",
     details: [
-      "Following an artical on the ESP website, I currently have a digital schematic of the power supply in KiCad. I've also picked out the "+
-      "necessary parts from DigiKey. ",
+      "Following an article on the ESP website, I currently have a digital schematic of the power supply in KiCad. I've also picked out the "+
+      "necessary parts from DigiKey. My next step will be to find footprints for all of my components in order to create the actual pcb layout. "+
+      "The project is looking to be very expensive with my current parts total at around $140. I'm still planning to follow through regardless "+
+      "because it's necessary to make the audio amp that I've been itching to build. Plus, it will be a good opportunity to learn something about "+
+      "power electronics.",
       //"Streamed audio path with AXI-Stream; testbench verifies magnitude response.",
       //"Resource utilization and timing closure validated with synthesis reports."
     ],
