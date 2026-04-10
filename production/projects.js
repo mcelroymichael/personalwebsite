@@ -45,6 +45,31 @@ window.PROJECTS = {
     ],
     tech: ["Python", "OpenPYXL", "Microsoft Excel", "Pycharms"]
   },
+
+  "power-supply": {
+    title: "Custom Split ±35V Power Supply",
+    subtitle: "Custom power supply that will later be used to power an audio amp.",
+    hero: "/assets/projects/chess/hero.png", // optional image path: "/assets/projects/fpga-eq/hero.jpg"
+    tags: ["Java", "JavaFX"],
+    links: [
+      //{ label: "GitHub", href: "#", kind: "code" },
+      { label: "ESP Website", href: "https://sound-au.com/", kind: "link" }
+    ],
+    summary: "Custom Split ±35V Power Supply designed to power an 80W Audio Amplifier.",
+    details: [
+      "Following an artical on the ESP website, I currently have a digital schematic of the power supply in KiCad. I've also picked out the "+
+      "necessary parts from DigiKey. ",
+      //"Streamed audio path with AXI-Stream; testbench verifies magnitude response.",
+      //"Resource utilization and timing closure validated with synthesis reports."
+    ],
+    tech: [
+      "KiCad", "Power Electronics"
+    ],
+    gallery: [
+      // Optional image list: "/assets/projects/fpga-eq/bode.png"
+      "/assets/projects/power-supply/Rev0Schematic.png",
+    ]
+  }
 /*
   "line-follower": {
     title: "Line-Following Robot!!!PLACEHOLDER!!!",
