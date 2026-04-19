@@ -1,0 +1,9 @@
+{
+  "name": "mcelroymichael-site",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node ./scripts/build.mjs",
+    "new:blog": "cp ./src/content/blog/_template.md ./src/content/blog/$(date +%Y-%m-%d)-new-post.md"
+  }
+}

@@ -206,3 +206,53 @@ body{
   text-align: right;
 }
 
+
+/* Rebuild additions */
+.nav{ margin-left:auto; display:flex; gap:.6rem; align-items:center; flex-wrap:wrap; }
+.chip{
+  display:inline-block;
+  padding:.18rem .55rem;
+  border:1px solid var(--line);
+  border-radius:999px;
+  font-size:.82rem;
+  margin-right:.35rem;
+}
+.panel{
+  background: var(--card);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:1rem;
+}
+.backlink{
+  display:inline-flex;
+  align-items:center;
+  gap:.35rem;
+  text-decoration:none;
+  color:inherit;
+  margin-bottom:1rem;
+}
+.backlink:hover{ text-decoration:underline; }
+.project-heroimg{
+  width:100%;
+  aspect-ratio:16/9;
+  object-fit:cover;
+  border-radius:12px;
+  border:1px solid var(--line);
+  background:#0f141b;
+  margin-top:1rem;
+}
+.gallery{
+  display:grid;
+  gap:.6rem;
+  grid-template-columns:repeat(12,1fr);
+  margin-top:.8rem;
+}
+.gallery img{
+  grid-column:span 12;
+  width:100%;
+  border-radius:10px;
+  border:1px solid var(--line);
+}
+@media (min-width:760px){
+  .gallery img{ grid-column:span 6; }
+}
